@@ -24,3 +24,12 @@ i) Dvote : It's the main contract. Used to manage voters, voting, approving cand
 ii) DvoteCandidate : It's used for managing candidates & their activity of the dvote application.
 
 iii) DvoteCoin : It's used for creating Custom ERC-20 DvoteCoin of the application.
+
+Smart contracts & their integration to frontend is ready.
+UI of the application is under development.🔥
+
+Tool & Technologies Used : Next Js, Solidity, Web3.js , Ethereum, Blockchain, Remix IDE, Hardhat & Tailwind CSS. 
+
+Feel free to give a star to this repo, if you like this application.
+
+And if you want to build something similar or more into blockchain space, do connect with me.
