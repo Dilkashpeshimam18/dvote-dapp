@@ -28,10 +28,10 @@ iii) DvoteCoin : It's used for creating Custom ERC-20 DvoteCoin of the applicati
 Smart contracts & their integration to frontend is ready.
 UI of the application is under development.🔥
 
-Tool & Technologies Used : Next Js, Solidity, Web3.js , Ethereum, Blockchain, Remix IDE, Hardhat & Tailwind CSS. 
+**Tool & Technologies Used : Next Js, Solidity, Web3.js , Ethereum, Blockchain, Remix IDE, Hardhat & Tailwind CSS.**
 
 Feel free to give a star to this repo, if you like this application.
 
-And if you want to build something similar or more into blockchain space, do connect with me over a chat on linkedin or gmail.
+And if you want to build something similar or more into blockchain space, do connect with me over a chat on linkedin or gmail : **dilkashpeshimam@gmail.com**.
 
 <a href="https://linkedin.com/in/dilkash-peshimam-80730b1a8" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="dilkash-peshimam-80730b1a8" height="40" width="40" /></a>
