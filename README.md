@@ -26,6 +26,11 @@ ii) DvoteCandidate : It's used for managing candidates & their activity of the d
 iii) DvoteCoin : It's used for creating Custom ERC-20 DvoteCoin of the application.
 
 Smart contracts & their integration to frontend is ready.
+
+https://github.com/Dilkashpeshimam18/dvote-dapp/tree/main/contract/contracts
+
+https://github.com/Dilkashpeshimam18/dvote-dapp/blob/main/client/src/app/context/VotingProvider.js
+
 UI of the application is under development.🔥
 
 **Tool & Technologies Used : Next Js, Solidity, Web3.js , Ethereum, ERC-20, Blockchain, Remix IDE, Hardhat & Tailwind CSS.**
