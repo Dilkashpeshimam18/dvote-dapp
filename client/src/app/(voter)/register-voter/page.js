@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React,{useState,useContext} from 'react'
 import VotingContext from '@/app/context/votingContext'
 
 const RegisterVoter = () => {

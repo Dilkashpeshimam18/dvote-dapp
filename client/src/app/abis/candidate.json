@@ -13,6 +13,17 @@
 		"type": "function"
 	},
 	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_dvoteCoinAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -44,6 +55,25 @@
 		"type": "event"
 	},
 	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "message",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "candidateAddress",
+				"type": "address"
+			}
+		],
+		"name": "CandidateDeleted",
+		"type": "event"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "string",
@@ -54,11 +84,29 @@
 				"internalType": "uint256",
 				"name": "_age",
 				"type": "uint256"
+			},
+			{
+				"internalType": "address payable",
+				"name": "votingContractAddress",
+				"type": "address"
 			}
 		],
 		"name": "createCandidate",
 		"outputs": [],
 		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_candidate",
+				"type": "address"
+			}
+		],
+		"name": "deleteCandidate",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -70,7 +118,13 @@
 			}
 		],
 		"name": "updateVoting",
-		"outputs": [],
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
@@ -138,6 +192,19 @@
 	},
 	{
 		"inputs": [],
+		"name": "dvoteCoin",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "getApprovedCandidates",
 		"outputs": [
 			{
@@ -178,7 +245,7 @@
 						"type": "bool"
 					}
 				],
-				"internalType": "struct VotingCandidate.Candidate[]",
+				"internalType": "struct DvoteCandidate.Candidate[]",
 				"name": "",
 				"type": "tuple[]"
 			}
@@ -234,7 +301,7 @@
 						"type": "bool"
 					}
 				],
-				"internalType": "struct VotingCandidate.Candidate",
+				"internalType": "struct DvoteCandidate.Candidate",
 				"name": "",
 				"type": "tuple"
 			}
@@ -284,9 +351,22 @@
 						"type": "bool"
 					}
 				],
-				"internalType": "struct VotingCandidate.Candidate[]",
+				"internalType": "struct DvoteCandidate.Candidate[]",
 				"name": "",
 				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "votingOrganizer",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
 			}
 		],
 		"stateMutability": "view",

@@ -2,10 +2,11 @@
 import React, { useContext, useEffect } from 'react'
 import VotingContext from '@/app/context/votingContext'
 
-const AllApproveCandidate = () => {
+const AllApproveCandidate = ({ account }) => {
     const { getApproveCandidates, allApproveCandidates, voteCandidate } = useContext(VotingContext)
 
     const handleVoteCandidate = async (id) => {
+        console.log('candidate id>>', id)
         try {
 
             await voteCandidate(id)
@@ -18,7 +19,7 @@ const AllApproveCandidate = () => {
 
     useEffect(() => {
         getApproveCandidates()
-    }, [])
+    }, [account])
 
     return (
         <div>
@@ -26,10 +27,10 @@ const AllApproveCandidate = () => {
                 allApproveCandidates?.length != 0 && allApproveCandidates?.map((candidate, index) => {
                     return (
                         <div key={index}>
-                            <h2>Candidate name: {candidate.name}</h2>
-                            <h4>Candidate bio: {candidate.bio}</h4>
-                            <h4>Candidate age: {candidate.age}</h4>
-                            <button onClick={() => handleVoteCandidate(candidate.candidateId)}>Vote</button>
+                            <h2>Candidate name: {candidate?.name}</h2>
+                            <h4>Candidate address: {candidate?.account}</h4>
+                            <h4>Votes: {candidate?.votes?.toString()}</h4>
+                            <button onClick={() => handleVoteCandidate(candidate?.candidateId)}>Vote Candidate</button>
                         </div>
                     )
                 })

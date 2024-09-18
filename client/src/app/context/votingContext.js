@@ -12,9 +12,10 @@ const VotingContext = createContext({
     allCandidates: [],
     approveCandidate: (id) => { },
     voteCandidate: (id) => { },
-    getVoterData: (voterId) => { },
+    getVoterData: (address) => { },
     getCandidateData: (candidateId) => { },
-    getAllCandidates:()=>{}
+    getAllCandidates:()=>{},
+    transferTokenToWinner:()=>{},
 })
 
 export default VotingContext
